@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "llm-finetuning"
+version = "0.1.0"
+description = "QLoRA fine-tuning setup"
+authors = ["Ghazaros Barseghyan"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+transformers = "^4.41.0"
+datasets = "^2.19.0"
+peft = "^0.10.0"
+accelerate = "^0.30.0"
+bitsandbytes = "^0.43.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+black = "^24.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
