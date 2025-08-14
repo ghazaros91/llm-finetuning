@@ -1,0 +1,20 @@
+fine_tuning_methods:
+  lora:
+    r: 8
+    lora_alpha: 16
+    target_modules: ["q_proj", "v_proj"]
+    lora_dropout: 0.05
+    bias: "none"
+    task_type: "CAUSAL_LM"
+
+  rag:
+    num_beams: 4
+    max_length: 512
+    min_length: 50
+    length_penalty: 2.0
+
+  cag:
+    num_beams: 4
+    max_length: 512
+    min_length: 50
+    length_penalty: 2.0

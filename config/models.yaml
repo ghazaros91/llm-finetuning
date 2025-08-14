@@ -1,0 +1,26 @@
+models:
+  - name: "Falcon-7B"
+    repo: "tiiuae/falcon-7b"
+    quantization: null
+    precision: "fp16"
+    target_modules:
+      - "query_key_value"  # used by Falcon models :contentReference[oaicite:1]{index=1}
+
+  - name: "Qwen-1.5-7B"
+    repo: "Qwen/Qwen1.5-7B"
+    quantization: "4bit"
+    precision: "bf16"
+    target_modules:
+      - "c_attn"           # core attention module :contentReference[oaicite:2]{index=2}
+      - "c_proj"           # also include projection in Qwen variants :contentReference[oaicite:3]{index=3}
+      - "w1"
+      - "w2"
+
+  - name: "Gemma-7B"
+    repo: "Gemma/Gemma-7B"
+    quantization: null
+    precision: "fp16"
+    target_modules:
+      - "q_proj"           # key/query projection modules :contentReference[oaicite:4]{index=4}
+      - "v_proj"
+

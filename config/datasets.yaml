@@ -1,0 +1,11 @@
+datasets:
+  - name: "lingshu-medical-mllm/ReasonMed"
+    source: "huggingface"
+    config: null  # Use null if no specific config is needed
+
+  - name: "your_dataset"
+    source: "local"
+    path: "./data/your_dataset.csv"
+    config:
+      sep: ","
+      header: true
