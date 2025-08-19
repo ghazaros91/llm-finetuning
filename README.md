@@ -33,5 +33,5 @@ A comprehensive pipeline for fine-tuning Large Language Models with instruction 
 ### Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/llm-fine-tuning.git
+   git clone https://github.com/ghazaros91/llm-fine-tuning.git
    cd llm-fine-tuning
